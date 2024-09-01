@@ -14,10 +14,11 @@ services:
       - postgres_data:/var/lib/postgresql/data
     restart: always
 
-  MediaFusion:
+  mediafusion:
     build:
-      context: ./apps/MediaFusion
-      dockerfile: Dockerfile
+      # context: ./apps/MediaFusion
+      context: .
+      dockerfile: ./apps/MediaFusion/Dockerfile
     container_name: media-fusion
     ports:
       - "3000:3000"
@@ -25,8 +26,6 @@ services:
       - db
     environment:
       DATABASE_URL: ${DATABASE_URL}
-    volumes:
-      - ./apps/MediaFusion:/app
 
 volumes:
   postgres_data:

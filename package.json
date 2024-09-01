@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "mediafusion:start": "nx serve MediaFusion"
+    "build:all": "nx run-many --target=build --all --parallel --maxParallel=3",
+    "start:mediafusion": "nx serve MediaFusion",
+    "build:mediafusion": "nx build MediaFusion",
+    "docker:compose:up": "docker compose up -d"
+
   },
   "private": true,
   "dependencies": {
