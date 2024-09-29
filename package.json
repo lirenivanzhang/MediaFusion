@@ -7,7 +7,6 @@
     "start:mediafusion": "nx serve MediaFusion",
     "build:mediafusion": "nx build MediaFusion",
     "docker:compose:up": "docker compose up -d"
-
   },
   "private": true,
   "dependencies": {

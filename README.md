@@ -1,82 +1,56 @@
-# Org
+# **MediaFusion**
+## **Vision**
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+This project aims to create a flexible and user-driven marketplace for digital media that reshapes how we access, manage, and monetize content. In a world where subscription models have become the norm, we seek to offer an alternative—one that empowers both consumers and creators by providing a platform where digital media of all kinds can be discovered, purchased, and managed transparently.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+Our goal is to create a fair, accessible space where creators have full control over how they sell their content—whether it's video, audio, images, datasets, or apps—and consumers can easily track, manage, and access their digital assets in a single unified platform. By combining a marketplace with rich user interaction features, our platform will cater to both the creators and consumers of digital media, focusing on simplicity, transparency, and accessibility.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/node?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+---
 
-## Finish your CI setup
+## **Project Goals**
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/p2UTrGt5BV)
+### **Phase 1: Tracking and Management**
+In the first phase, the focus will be on creating a single platform for users to:
+- Track their existing subscriptions and digital assets, providing a clear overview of what content they own and where it’s hosted.
+- Offer basic embedding functionality, similar to platforms like Anilist, allowing users to link out to external services for media consumption (e.g., YouTube for videos).
+- Provide support for simple image hosting (e.g., profile pictures and product display images), while other media types will be externally linked.
 
+This phase will lay the groundwork for a robust, user-friendly interface where consumers can keep track of their digital collections.
 
-## Run tasks
+**Key features of Phase 1:**
+- Account and progress tracking for digital products.
+- Basic image support for profiles and product listings.
+- Reviews, ratings, and user feedback for media.
+- No native hosting for videos, audio, or other large files—content is embedded or linked.
 
-To run the dev server for your app, use:
+### **Phase 2: Integration and External Services**
+Phase 2 will introduce deeper integrations with existing platforms, allowing publishers to host their own media and make it accessible through the platform:
+- Publishers will be able to link to media hosted on external services (e.g., Google Drive, Dropbox) while also offering features like timed download links and previews for datasets and images.
+- A subscription management system will be introduced, allowing users to track and manage their various subscriptions from one place.
+- We aim to integrate basic embedding support for popular services such as YouTube and others that allow third-party media embedding.
 
-```sh
-npx nx serve MediaFusion
-```
+**Key features of Phase 2:**
+- Integration with external media hosting services.
+- Subscription management and media access.
+- Support for previewing datasets and images from external sources.
+- Publishers responsible for their own content moderation, with the platform providing tools for global accessibility and compliance.
 
-To create a production bundle:
+---
 
-```sh
-npx nx build MediaFusion
-```
+## **Future Vision: A Fully Native Platform and Marketplace**
+In the long term, the goal is to evolve into a fully native platform where creators can host and sell their digital media directly. The platform will also allow third-party services to create and embed “micro apps” within our system, enhancing the user experience by keeping everything within the platform. This would allow services like Netflix, YouTube, or others to create seamless experiences for users without leaving the platform environment.
 
-To see all available targets to run for a project, run:
+**Key features of the future vision:**
+- Fully native support for media hosting and consumption.
+- A marketplace for all types of digital media (videos, audio, images, datasets, apps).
+- A credit system allowing flexible purchase options (e.g., time-based streaming credits, purchase of datasets, licensing apps).
+- Support for third-party micro apps, reviewed and embedded directly within the platform for a unified user experience.
 
-```sh
-npx nx show project MediaFusion
-```
-        
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+---
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### **Guiding Principles**
+- **Fairness**: Ensure equal opportunities for all publishers and creators, regardless of size or popularity, with standardized guidelines and flexible options for pricing.
+- **Transparency**: Build a platform that prioritizes user control and clear information on ownership, content access, and pricing.
+- **Scalability**: Start simple, but with the potential to grow into a comprehensive digital marketplace.
 
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/node:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/node:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/node?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+This project is still in its infancy and will take shape as development progresses and the community provides feedback.

@@ -1,12 +1,10 @@
 # Use the official Node.js image as the base image
 FROM node:lts-alpine
 
-# Set environment variables for the application
-ENV HOST=0.0.0.0
-ENV PORT=3000
-
 # Create and set the working directory
-WORKDIR /app
+WORKDIR /MediaFusion
+
+ENV PATH /MediaFusion/node_modules/.bin:$PATH
 
 # Copy package.json and package-lock.json (or yarn.lock) to the working directory
 COPY package.json package-lock.json ./
